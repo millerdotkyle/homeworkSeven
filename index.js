@@ -52,7 +52,7 @@ inquirer
     }
   ])
   .then((response) => {
-       fs.writeFile('README.md', readmegen(response), (err) => 
+       fs.writeFile('./output/README.md', readmegen(response), (err) => 
        err ? console.error(err) : console.log('Commit logged!') )
   });
   
